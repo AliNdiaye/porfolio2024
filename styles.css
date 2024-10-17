@@ -1,0 +1,209 @@
+.profile{
+    margin-left: 0;
+    margin-top: 0;
+
+}
+
+.profile h1{
+    position: relative;
+   
+    font-size: 50px;
+    color: #212121;
+
+}
+
+.me{
+  width:40%;
+  height: 100%;
+  position:absolute;
+  bottom: 0;
+  right:20vh;
+
+}
+.me img{
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition:bottom 1s, left 1s;
+}
+
+
+/* END PROFIL */
+
+/* Style pour le bouton "Télécharger CV" */
+.profile .custom-btn-1 {
+    position: relative;
+    top: 60px;
+    background-color: #f39121; 
+    color: black;              
+    border: none;              
+}
+
+.profile .custom-btn-1:hover {
+    background-color: #12505d;
+}
+
+/* Style pour le bouton "Contactez-Moi" */
+.profile .custom-btn-2 {
+    position: relative;
+    top: 60px;
+    background-color: #12505d; 
+    color: white;              
+    border: none;            
+}
+
+.profile .custom-btn-2:hover {
+    background-color: #f39121;
+}
+.hr1{
+    position: relative;
+    top: 30px;
+    width: 240px;
+    color: #f39121;
+    height: 5px;
+    
+}
+/* END PROFIL */
+
+/* Apropos */
+
+#Apropos{
+  padding: 50px;
+  background-color: #f4f4f4;
+  position: relative;
+  top: 150px;
+}
+.about-img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* END A Propos */
+
+
+/* Competences */
+#Competeces{
+  position: relative;
+  top: 100px;
+}
+/* Style du cercle de progression */
+.progress-circle {
+  position: relative;
+  width: 150px; /* Largeur par défaut */
+  height: 150px; /* Hauteur par défaut */
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 20px auto; /* Centrer horizontalement */
+}
+
+.progress-inner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-left,
+.progress-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 75px, 150px, 0);
+}
+
+.progress-left .progress-bar,
+.progress-right .progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #f39121;
+  border-radius: 50%;
+  position: absolute;
+  clip: rect(0, 150px, 150px, 75px);
+}
+
+.progress-left .progress-bar {
+  transform: rotate(180deg);
+}
+
+.progress-right .progress-bar {
+  transform: rotate(0deg); /* Initial rotation, will be set in JS */
+}
+
+.progress-inner img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.circle-title {
+  margin-top: 10px; /* Espacement entre le cercle et le titre */
+}
+
+@media (max-width: 768px) {
+  .progress-circle {
+      width: 100px; /* Largeur pour petits écrans */
+      height: 100px; /* Hauteur pour petits écrans */
+  }
+
+  .progress-inner {
+      width: 90px; /* Ajustement pour petits écrans */
+      height: 90px; /* Ajustement pour petits écrans */
+  }
+
+  .progress-inner img {
+      width: 60px; /* Ajustement pour petits écrans */
+      height: 60px; /* Ajustement pour petits écrans */
+  }
+}
+
+@media (max-width: 576px) {
+  .progress-circle {
+      width: 80px; /* Largeur pour très petits écrans */
+      height: 80px; /* Hauteur pour très petits écrans */
+  }
+
+  .progress-inner {
+      width: 70px; /* Ajustement pour très petits écrans */
+      height: 70px; /* Ajustement pour très petits écrans */
+  }
+
+  .progress-inner img {
+      width: 50px; /* Ajustement pour très petits écrans */
+      height: 50px; /* Ajustement pour très petits écrans */
+  }
+}
+
+/******* Competence  ********/
+/****** Fin Competencre  ********/
+
+.team-member {
+  width: 100%;
+  max-width: 300px; /* Fixe la largeur maximale des cartes */
+  margin: 0 auto; /* Centre les cartes */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute un ombrage pour les cartes */
+  border-radius: 10px; /* Arrondit les coins des cartes */
+}
+
+.team-member .member-img img {
+  width: 100%;
+  height: auto; /* Laisse les images s'adapter à la largeur des cartes */
+  object-fit: cover; /* S'assure que les images remplissent bien les cartes */
+  border-radius: 10px 10px 0 0; /* Arrondit les coins du haut de l'image */
+}
+
+.team-member .member-info {
+  padding: 15px;
+  text-align: center;
+}
+
